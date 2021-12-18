@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "swagger-cli bundle -o build/openapi.yaml -t yaml doc/openapi.yaml",
-    "redoc": "redoc-cli bundle build/openapi.yaml -o build/openapi.html"
+    "swagger-cli:bundle": "swagger-cli bundle -o build/openapi.yaml -t yaml doc/openapi.yaml",
+    "redoc": "redoc-cli bundle build/openapi.yaml -o build/openapi.html",
+    "openapi-generator-cli:generate": "openapi-generator-cli generate -i doc/openapi.yaml -o build/generated -g openapi-yaml"
   },
   "keywords": [],
   "author": "",

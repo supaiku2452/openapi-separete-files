@@ -11,11 +11,3 @@ paths:
     $ref: "./paths/pets.yaml"
   /pets/{petId}:
     $ref: "./paths/pets-petId.yaml"
-components:
-  schemas:
-    Pet:
-      $ref: "./schemas/Pet.yaml"
-    Pets:
-      $ref: "./schemas/Pets.yaml"
-    Error:
-      $ref: "./schemas/Error.yaml"
