@@ -7,7 +7,9 @@
     "swagger-cli:bundle": "swagger-cli bundle -o swagger-cli/build/openapi.yaml -t yaml swagger-cli/doc/openapi.yaml",
     "swagger-cli:redoc": "redoc-cli bundle swagger-cli/build/openapi.yaml -o swagger-cli/build/openapi.html",
     "openapi-generator-cli:generate": "openapi-generator-cli generate -i openapi-generator-cli/doc/openapi.yaml -o openapi-generator-cli/build -g openapi-yaml",
-    "openapi-generator-cli:redoc": "redoc-cli bundle openapi-generator-cli/build/openapi/openapi.yaml -o openapi-generator-cli/build/openapi.html"
+    "openapi-generator-cli:redoc": "redoc-cli bundle openapi-generator-cli/build/openapi/openapi.yaml -o openapi-generator-cli/build/openapi.html",
+    "openapi-generator-cli:generate:typescript-fetch": "openapi-generator-cli generate -g typescript-fetch  -o openapi-generator-cli/generated/client -i openapi-generator-cli/build/openapi/openapi.yaml --additional-properties=typescriptThreePlus=true,withInterfaces=true,supportsES6=true",
+    "openapi-generator-cli:generate:typescript-nextjs": "openapi-generator-cli generate -g typescript-nestjs  -o openapi-generator-cli/generated/backend -i openapi-generator-cli/build/openapi/openapi.yaml --additional-properties=typescriptThreePlus=true,withInterfaces=true,supportsES6=true"
   },
   "keywords": [],
   "author": "",
